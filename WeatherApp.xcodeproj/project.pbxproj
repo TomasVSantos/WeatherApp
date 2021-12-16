@@ -11,6 +11,10 @@
 		33D945B5276BD54700C93687 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D945B4276BD54700C93687 /* ContentView.swift */; };
 		33D945B7276BD54800C93687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D945B6276BD54800C93687 /* Assets.xcassets */; };
 		33D945BA276BD54800C93687 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D945B9276BD54800C93687 /* Preview Assets.xcassets */; };
+		33D945C2276BD66B00C93687 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D945C1276BD66B00C93687 /* LocationManager.swift */; };
+		33D945C5276BDBC100C93687 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D945C4276BDBC100C93687 /* WelcomeView.swift */; };
+		33D945C7276BE07E00C93687 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D945C6276BE07E00C93687 /* LoadingView.swift */; };
+		33D945C9276BE1F800C93687 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D945C8276BE1F800C93687 /* WeatherManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		33D945B4276BD54700C93687 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		33D945B6276BD54800C93687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33D945B9276BD54800C93687 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		33D945C1276BD66B00C93687 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		33D945C4276BDBC100C93687 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		33D945C6276BE07E00C93687 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		33D945C8276BE1F800C93687 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,9 @@
 		33D945B1276BD54700C93687 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				33D945C3276BDB7900C93687 /* Views */,
+				33D945C0276BD65600C93687 /* Managers */,
 				33D945B2276BD54700C93687 /* WeatherAppApp.swift */,
-				33D945B4276BD54700C93687 /* ContentView.swift */,
 				33D945B6276BD54800C93687 /* Assets.xcassets */,
 				33D945B8276BD54800C93687 /* Preview Content */,
 			);
@@ -65,6 +74,25 @@
 				33D945B9276BD54800C93687 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		33D945C0276BD65600C93687 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				33D945C1276BD66B00C93687 /* LocationManager.swift */,
+				33D945C8276BE1F800C93687 /* WeatherManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		33D945C3276BDB7900C93687 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				33D945B4276BD54700C93687 /* ContentView.swift */,
+				33D945C4276BDBC100C93687 /* WelcomeView.swift */,
+				33D945C6276BE07E00C93687 /* LoadingView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D945C9276BE1F800C93687 /* WeatherManager.swift in Sources */,
 				33D945B5276BD54700C93687 /* ContentView.swift in Sources */,
 				33D945B3276BD54700C93687 /* WeatherAppApp.swift in Sources */,
+				33D945C2276BD66B00C93687 /* LocationManager.swift in Sources */,
+				33D945C7276BE07E00C93687 /* LoadingView.swift in Sources */,
+				33D945C5276BDBC100C93687 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
