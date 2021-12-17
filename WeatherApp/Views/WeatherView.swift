@@ -37,13 +37,6 @@ struct WeatherView: View {
                     }
                     Spacer()
                         .frame(height: 80)
-                    AsyncImage(url: URL(string: "https://cdn.pixabay.com/photo/2020/01/24/21/33/city-4791269_960_720.png")){ image in image
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 350)
-                    } placeholder: {
-                        ProgressView()
-                    }
                     Spacer()
                 }
                 .frame(maxWidth: .infinity)
@@ -56,14 +49,19 @@ struct WeatherView: View {
                     Text("Weather now")
                         .bold().padding(.bottom)
                     HStack{
-                        WeatherRow(logo: "thermometer", name: "Min temp", value: (weather.main.temp_min.roundDouble() + "º"))
+                        WeatherRow(logo: "thermometer.snowflake", name: "Min temp", value: (weather.main.temp_min.roundDouble() + "º"))
                         Spacer()
-                        WeatherRow(logo: "thermometer", name: "Max temp", value: (weather.main.temp_max.roundDouble() + "º"))
+                        WeatherRow(logo: "thermometer.sun", name: "Max temp               ", value: (weather.main.temp_max.roundDouble() + "º"))
+                    }
+                    HStack{
+                        WeatherRow(logo: "thermometer", name: "Feels like", value: (weather.main.feels_like.roundDouble() + "º"))
+                        Spacer()
+                        WeatherRow(logo: "humidity", name: "Humidity                 ", value: (weather.main.humidity.roundDouble() + "%"))
                     }
                     HStack{
                         WeatherRow(logo: "wind", name: "Wind speed", value: (weather.main.temp_min.roundDouble() + "m/s"))
                         Spacer()
-                        WeatherRow(logo: "humidity", name: "Humidity", value: (weather.main.humidity.roundDouble() + "%"))
+                        WeatherRow(logo: "arrow.down.forward.and.arrow.up.backward.circle", name: "Pressure", value: (weather.main.pressure.roundDouble() + "mb"))
                     }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
